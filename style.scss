@@ -1,0 +1,41 @@
+// Importer les polices
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+// Définir les styles globaux
+body {
+    font-family: 'Achemine', 'Segoe UI', 'Lato', sans-serif;
+    padding-top: 15px; // Espace pour le header fixe
+}
+
+.navbar-brand {
+    font-family: 'Achemine', 'Segoe UI', 'Lato', sans-serif;
+}
+
+.header-title {
+    font-family: 'Achemine', 'Segoe UI', 'Lato', sans-serif;
+}
+
+.text-zone, .caption, .carousel-caption {
+    font-family: 'Achemine', 'Segoe UI', 'Lato', sans-serif;
+}
+
+.navbar-brand img {
+    height: 50px; // Hauteur de l'image
+    margin-right: 10px;
+}
+
+// Média queries pour les appareils mobiles
+@media (max-width: 768px) {
+    body{
+        padding-bottom: 15px;
+    }
+    .header-title {
+        background-color: #000; // Fond noir
+        color: #fff; // Texte blanc
+        width: 100%; // Largeur à 100%
+        padding: 10px 0; // Padding vertical pour un meilleur affichage
+        margin-top: 20px; // Ajout d'un espace au-dessus du titre
+        text-align: center; // Centrage du texte
+    }
+}

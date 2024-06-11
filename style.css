@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap");
+body {
+  font-family: "Achemine", "Segoe UI", "Lato", sans-serif;
+  padding-top: 15px;
+}
+
+.navbar-brand {
+  font-family: "Achemine", "Segoe UI", "Lato", sans-serif;
+}
+
+.header-title {
+  font-family: "Achemine", "Segoe UI", "Lato", sans-serif;
+}
+
+.text-zone, .caption, .carousel-caption {
+  font-family: "Achemine", "Segoe UI", "Lato", sans-serif;
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 15px;
+  }
+  .header-title {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
