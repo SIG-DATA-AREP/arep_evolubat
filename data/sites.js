@@ -1,4 +1,4 @@
-const site = {
+const sites = {
   1: {
     siteName: "Fontaibleau",
     title_ztext_2: "Fontaibleau 2020",

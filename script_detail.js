@@ -7,17 +7,17 @@ $(document).ready(function () {
   }
 
   function loadDetailContent(id) {
-    $("#site-name").html(site[id].siteName);
-    $("#detail-content").html(site[id].content);
+    $("#site-name").html(sites[id].siteName);
+    $("#detail-content").html(sites[id].content);
 
-    $("#title_ztext_2").html(site[id].title_ztext_2);
-    $("#content_ztext_2").html(site[id].content_ztext_2);
-    $("#desc_ztext_2").html(site[id].desc_ztext_2);
+    $("#title_ztext_2").html(sites[id].title_ztext_2);
+    $("#content_ztext_2").html(sites[id].content_ztext_2);
+    $("#desc_ztext_2").html(sites[id].desc_ztext_2);
 
-    $("#title_ztext_1").html(site[id].title_ztext_1);
-    $("#content_ztext_1").html(site[id].content_ztext_1);
-    $("#desc_ztext_11").html(site[id].desc_ztext_11);
-    $("#desc_ztext_12").html(site[id].desc_ztext_12);
-    $("#desc_ztext_13").html(site[id].desc_ztext_13);
+    $("#title_ztext_1").html(sites[id].title_ztext_1);
+    $("#content_ztext_1").html(sites[id].content_ztext_1);
+    $("#desc_ztext_11").html(sites[id].desc_ztext_11);
+    $("#desc_ztext_12").html(sites[id].desc_ztext_12);
+    $("#desc_ztext_13").html(sites[id].desc_ztext_13);
   }
 });
