@@ -20,7 +20,12 @@ $(document).ready(function () {
         .toLowerCase()
         .replaceAll(" ", "_")}/2020.jpeg`
     );
-
+    $("#img_lightbox_2020").attr(
+      "src",
+      `img/sites/${sites[id].siteName
+        .toLowerCase()
+        .replaceAll(" ", "_")}/2020.jpeg`
+    );
     $("#title_ztext_1").html(sites[id].title_ztext_1);
     $("#content_ztext_1").html(sites[id].content_ztext_1);
 
@@ -32,6 +37,12 @@ $(document).ready(function () {
       const el = sites[id].img_desc[index];
       $(`#img_1950_${index}`).attr(
         "src",
+        `img/sites/${sites[id].siteName
+          .toLowerCase()
+          .replaceAll(" ", "_")}/1950_${index}.jpeg`
+      );
+      $(`#img_lightbox_${index}`).attr(
+        "href",
         `img/sites/${sites[id].siteName
           .toLowerCase()
           .replaceAll(" ", "_")}/1950_${index}.jpeg`
