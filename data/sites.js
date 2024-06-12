@@ -6,9 +6,11 @@ const sites = {
     desc_ztext_2: "fontainebleau description 2020",
     title_ztext_1: "fontainebleau 1950",
     content_ztext_1: "fontainebleau 1950 content",
-    desc_ztext_11: " fontainebleau 1950 description 1",
-    desc_ztext_12: " fontainebleau 1950 description 2",
-    desc_ztext_13: " fontainebleau 1950 description 3",
+    img_desc: [
+      "fontainebleau 1950 description 1",
+      "fontainebleau 1950 description 2",
+      "fontainebleau 1950 description 3",
+    ],
   },
   2: {
     siteName: "Site 2",
@@ -17,9 +19,11 @@ const sites = {
     desc_ztext_2: "",
     title_ztext_1: "",
     content_ztext_1: "",
-    desc_ztext_11: "",
-    desc_ztext_12: "",
-    desc_ztext_13: "",
+    img_desc: [
+      " 1950 description 1",
+      " 1950 description 2",
+      " 1950 description 3",
+    ],
   },
   3: {
     siteName: "Brazzaville",
@@ -28,8 +32,10 @@ const sites = {
     desc_ztext_2: "",
     title_ztext_1: "",
     content_ztext_1: "",
-    desc_ztext_11: "",
-    desc_ztext_12: "",
-    desc_ztext_13: "",
+    img_desc: [
+      " 1950 description 1",
+      " 1950 description 2",
+      " 1950 description 3",
+    ],
   },
 };

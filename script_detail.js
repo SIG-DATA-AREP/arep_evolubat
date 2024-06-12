@@ -23,26 +23,20 @@ $(document).ready(function () {
 
     $("#title_ztext_1").html(sites[id].title_ztext_1);
     $("#content_ztext_1").html(sites[id].content_ztext_1);
-    $("#desc_ztext_11").html(sites[id].desc_ztext_11);
-    $("#desc_ztext_12").html(sites[id].desc_ztext_12);
-    $("#desc_ztext_13").html(sites[id].desc_ztext_13);
-    $("#img_1950_1").attr(
-      "src",
-      `img/sites/${sites[id].siteName
-        .toLowerCase()
-        .replaceAll(" ", "_")}/1950_1.jpeg`
-    );
-    $("#img_1950_2").attr(
-      "src",
-      `img/sites/${sites[id].siteName
-        .toLowerCase()
-        .replaceAll(" ", "_")}/1950_2.jpeg`
-    );
-    $("#img_1950_3").attr(
-      "src",
-      `img/sites/${sites[id].siteName
-        .toLowerCase()
-        .replaceAll(" ", "_")}/1950_3.jpeg`
-    );
+
+    for (
+      let index = 1;
+      index < Object.keys(sites[id].img_desc).length + 1;
+      index++
+    ) {
+      const el = sites[id].img_desc[index];
+      $(`#img_1950_${index}`).attr(
+        "src",
+        `img/sites/${sites[id].siteName
+          .toLowerCase()
+          .replaceAll(" ", "_")}/1950_${index}.jpeg`
+      );
+      $(`#desc_ztext_${index}`).html(el);
+    }
   }
 });
