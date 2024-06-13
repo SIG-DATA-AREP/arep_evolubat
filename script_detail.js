@@ -26,6 +26,7 @@ $(document).ready(function () {
         .toLowerCase()
         .replaceAll(" ", "_")}/2020.jpeg`
     );
+    $("#img_lightbox_2020").attr("data-title", sites[id].desc_ztext_2);
     $("#title_ztext_1").html(sites[id].title_ztext_1);
     $("#content_ztext_1").html(sites[id].content_ztext_1);
 
@@ -47,6 +48,7 @@ $(document).ready(function () {
           .toLowerCase()
           .replaceAll(" ", "_")}/1950_${index}.jpeg`
       );
+      $(`#img_lightbox_${index}`).attr("data-title", el);
       $(`#desc_ztext_${index}`).html(el);
     }
   }
