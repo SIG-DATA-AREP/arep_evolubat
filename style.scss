@@ -28,8 +28,51 @@ body {
 .map{
     height: 400px; // Hauteur de la carte
     width: 100%; // Largeur de la carte
-    // border: #000 1px solid; // Bordure noire
 }
+
+.content-section {
+    font-family: 'Achemine', 'Segoe UI', 'Lato', sans-serif;
+    // padding: 0 10px;
+    // min-height: 350px;
+    // overflow-y: auto;
+    // scrollbar-width:thin;
+
+    h3{
+        font-weight: bold;
+    }
+}
+
+// .element-scrollable {
+//     /* Internet Explorer 10+ */
+//     -ms-overflow-style: none;
+//     /* Firefox */
+//     scrollbar-width: none;
+// }
+
+// /* Safari et Chrome */
+// .element-scrollable::-webkit-scrollbar {
+//     width: 0;
+//     height: 0;
+//     display: none;
+// }
+
+.content-section h3 {
+    margin-top: 20px;
+}
+.content-section p {
+    text-align: justify;
+}
+.site-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.site-title {
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 // Média queries pour les appareils mobiles
 @media (max-width: 768px) {

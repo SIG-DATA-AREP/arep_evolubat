@@ -11,12 +11,7 @@ const sites = {
       "fontainebleau 1950 description 2",
       "fontainebleau 1950 description 3",
     ],
-    coords: {
-      1: [45.764043, 4.835659], // Coordonnées pour la première carte
-      2: [45.764043, 4.835659], // Coordonnées pour la deuxième carte
-      3: [45.764043, 4.835659], // Coordonnées pour la troisième carte
-      2020: [45.764043, 4.835659], // Coordonnées pour la carte de 2020
-    },
+    coords: [48.402908, 2.700391],
   },
   2: {
     siteName: "Site 2",
@@ -30,12 +25,7 @@ const sites = {
       " 1950 description 2",
       " 1950 description 3",
     ],
-    coords: {
-      1: [45.764043, 4.835659], // Coordonnées pour la première carte
-      2: [45.764043, 4.835659], // Coordonnées pour la deuxième carte
-      3: [45.764043, 4.835659], // Coordonnées pour la troisième carte
-      2020: [45.764043, 4.835659], // Coordonnées pour la carte de 2020
-    },
+    coords: [47.218371, -1.553621],
   },
   3: {
     siteName: "Lyon",
@@ -49,11 +39,6 @@ const sites = {
       " 1950 description 2",
       " 1950 description 3",
     ],
-    coords: {
-      1: [45.764043, 4.835659], // Coordonnées pour la première carte
-      2: [45.764043, 4.835659], // Coordonnées pour la deuxième carte
-      3: [45.764043, 4.835659], // Coordonnées pour la troisième carte
-      2020: [45.764043, 4.835659], // Coordonnées pour la carte de 2020
-    },
+    coords: [45.764043, 4.835659],
   },
 };

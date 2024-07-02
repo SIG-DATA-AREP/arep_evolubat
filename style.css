@@ -27,6 +27,33 @@ body {
   width: 100%;
 }
 
+.content-section {
+  font-family: "Achemine", "Segoe UI", "Lato", sans-serif;
+}
+.content-section h3 {
+  font-weight: bold;
+}
+
+.content-section h3 {
+  margin-top: 20px;
+}
+
+.content-section p {
+  text-align: justify;
+}
+
+.site-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.site-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   body {
     padding-bottom: 15px;
