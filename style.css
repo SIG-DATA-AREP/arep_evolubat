@@ -33,6 +33,10 @@ body {
 .content-section h3 {
   font-weight: bold;
 }
+.content-section a {
+  color: #000;
+  font-style: italic;
+}
 
 .content-section h3 {
   margin-top: 20px;
