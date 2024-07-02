@@ -5,6 +5,9 @@ $(document).ready(function () {
     const el = sites[index];
     console.log("🚀 ~ el:", el);
     list = ` <div class="col-md-4 mb-4">
+                <div class="caption text-center mt-2">
+                  <p>${el.siteName}</p>
+                </div>
             <div class="thumbnail">
                 <a href="detail.html?id=${index}">
                     <img src="img/sites/${el.siteName
@@ -13,9 +16,6 @@ $(document).ready(function () {
       el.siteName
     }" class="img-fluid rounded">
                 </a>
-            </div>
-            <div class="caption text-center mt-2">
-                <p>${el.siteName}</p>
             </div>
         </div>
       `;
