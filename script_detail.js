@@ -14,68 +14,52 @@ $(document).ready(function () {
     $("#content_ztext_2").html(sites[id].content_ztext_2);
     $("#desc_ztext_2").html(sites[id].desc_ztext_2);
     $("#img_2020").attr("alt", sites[id].siteName);
+  }
 
-    // $("#img_2020").attr(
-    //   "src",
-    //   `img/sites/${sites[id].siteName
-    //     .toLowerCase()
-    //     .replaceAll(" ", "_")}/2020.jpeg`
-    // );
+  const coords = [45.764043, 4.835659];
+  const zoom = 13;
 
-    // $("#img_lightbox_2020").attr(
-    //   "src",
-    //   `img/sites/${sites[id].siteName
-    //     .toLowerCase()
-    //     .replaceAll(" ", "_")}/2020.jpeg`
-    // );
+  const map1 = L.map("map_1950_1").setView(coords, zoom);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    // maxZoom: 10,
+  }).addTo(map1);
 
-    // Initialiser la carte pour 2020
-    initializeMap("map_2020", sites[id].coords[2020], 13);
+  const map2 = L.map("map_1950_2").setView(coords, zoom);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    // maxZoom: 10,
+  }).addTo(map2);
 
-    // $("#img_lightbox_2020").attr("data-title", sites[id].desc_ztext_2);
-    // $("#title_ztext_1").html(sites[id].title_ztext_1);
-    // $("#content_ztext_1").html(sites[id].content_ztext_1);
+  const map3 = L.map("map_1950_3").setView(coords, zoom);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    // maxZoom: 10,
+  }).addTo(map3);
 
-    // for (
-    //   let index = 1;
-    //   index < Object.keys(sites[id].img_desc).length + 1;
-    //   index++
-    // ) {
-    //   const el = sites[id].img_desc[index];
-    //   $(`#img_1950_${index}`).attr(
-    //     "src",
-    //     `img/sites/${sites[id].siteName
-    //       .toLowerCase()
-    //       .replaceAll(" ", "_")}/1950_${index}.jpeg`
-    //   );
-    //   $(`#img_lightbox_${index}`).attr(
-    //     "href",
-    //     `img/sites/${sites[id].siteName
-    //       .toLowerCase()
-    //       .replaceAll(" ", "_")}/1950_${index}.jpeg`
-    //   );
-    //   $(`#img_lightbox_${index}`).attr("data-title", el);
-    //   $(`#desc_ztext_${index}`).html(el);
-    // }
+  const map4 = L.map("map_2020").setView(coords, zoom);
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    // maxZoom: 10,
+  }).addTo(map4);
 
-    for (
-      let index = 1;
-      index < Object.keys(sites[id].img_desc).length + 1;
-      index++
-    ) {
-      // const el = sites[id].img_desc[index];
-      // $(`#desc_ztext_${index}`).html(el);
+  let isSyncing = false;
 
-      // Initialiser les cartes Leaflet
-      const mapId = `map_1950_${index}`;
-      initializeMap(mapId, sites[id].coords[index], 13);
+  function syncMaps(event) {
+    if (isSyncing) {
+      return;
     }
+    isSyncing = true;
+
+    const center = event.target.getCenter();
+    const zoom = event.target.getZoom();
+    [map1, map2, map3, map4].forEach((map) => {
+      if (map !== event.target) {
+        map.setView(center, zoom, { animate: false });
+      }
+    });
+
+    isSyncing = false;
   }
 
-  function initializeMap(mapId, coords, zoom) {
-    const map = L.map(mapId).setView(coords, zoom);
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 10,
-    }).addTo(map);
-  }
+  [map1, map2, map3, map4].forEach((map) => {
+    map.on("move", syncMaps);
+    map.on("zoom", syncMaps);
+  });
 });
