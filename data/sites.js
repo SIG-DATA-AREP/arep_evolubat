@@ -26,7 +26,7 @@ const sites = {
     ],
   },
   3: {
-    siteName: "Brazzaville",
+    siteName: "Lyon",
     title_ztext_2: "",
     content_ztext_2: "",
     desc_ztext_2: "",
