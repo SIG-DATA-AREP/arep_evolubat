@@ -22,6 +22,12 @@ body {
   margin-right: 10px;
 }
 
+.map {
+  height: 400px;
+  width: 100%;
+  border: #000 1px solid;
+}
+
 @media (max-width: 768px) {
   body {
     padding-bottom: 15px;

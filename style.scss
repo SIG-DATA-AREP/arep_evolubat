@@ -25,6 +25,12 @@ body {
     margin-right: 10px;
 }
 
+.map{
+    height: 400px; // Hauteur de la carte
+    width: 100%; // Largeur de la carte
+    border: #000 1px solid; // Bordure noire
+}
+
 // Média queries pour les appareils mobiles
 @media (max-width: 768px) {
     body{
