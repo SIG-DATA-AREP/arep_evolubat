@@ -6,7 +6,7 @@ $(document).ready(function () {
     console.log("🚀 ~ el:", el);
     list = ` <div class="col-md-4 mb-4">
                 <div class="caption text-center mt-2">
-                  <p>${el.siteName}</p>
+                  <p class="header-title cityName">${el.siteName}</p>
                 </div>
             <div class="thumbnail">
                 <a href="detail.html?id=${index}">
