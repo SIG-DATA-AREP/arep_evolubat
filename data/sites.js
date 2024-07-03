@@ -8,6 +8,7 @@ const sites = {
     content_ztext_1: "Antibes 1950 content",
     img_desc: ["Antibes", "Antibes", "Antibes"],
     coords: [43.5804, 7.1251],
+    zoom: 13,
   },
   2: {
     siteName: "Choisy",
@@ -18,6 +19,7 @@ const sites = {
     content_ztext_1: "Choisy",
     img_desc: ["Choisy", "Choisy", "Choisy"],
     coords: [45.9996, 6.0873],
+    zoom: 12,
   },
   3: {
     siteName: "Saint-Pierre-des-Corps",
@@ -32,5 +34,6 @@ const sites = {
       "Saint-Pierre-des-Corps",
     ],
     coords: [47.3833, 0.7333],
+    zoom: 11,
   },
 };
